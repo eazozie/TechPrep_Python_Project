@@ -15,7 +15,7 @@ import pandas as pd
 df = pd.read_csv("Grades_Short.csv")
 
 #Calculate the average of several columns and generate new columns based on the calculated values called 'Average'
-
+#Since the required column needed for the calculating the average is 6, so I added them and divided by that 6
 df["Average"] = (df["Assignment_1"] + df["Assignment_2"] + 
                  df["Quiz_1"] + df["Quiz_2"] + 
                  df["Mid_Term_Exam"] + df["Final_Exam"]) / 6
